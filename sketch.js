@@ -18,15 +18,15 @@ let circumference;
 
 let desiredLength;
 
-const stringWeight = 1;
+const stringWeight = 2;
 const stringGap = 8;
 
 let phase = 0;
 let wobble = 0;
-const wobbleInc = 0.02;
+const wobbleInc = 0.028;
 const phaseInc = 0.0001;
 const zoffInc = 0.001;
-const circleNumber = 100;
+const circleNumber = 55;
 const fileName = `Standard strings`;
 
 // info and download buttons
@@ -71,7 +71,8 @@ new p5((p5) => {
     let prevX, prevY;
     p5.stroke(0);
     p5.noFill();
-    p5.strokeWeight((stringWeight * p5.width) / 1580);
+    // p5.strokeWeight((stringWeight * p5.width) / 1580);
+    p5.strokeWeight(stringWeight);
     p5.strokeCap(p5.ROUND);
     p5.noFill();
 

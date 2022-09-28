@@ -86,7 +86,7 @@ new p5((p5) => {
     for (
       let a = phase;
       a < p5.TWO_PI + phase - p5.radians(gap);
-      a += p5.radians(3)
+      a += p5.radians(2)
     ) {
       let xoff = p5.map(p5.cos(a + phase), -1, 1, 0, noiseMax);
       let yoff = p5.map(p5.sin(a + phase), -1, 1, 0, noiseMax);
